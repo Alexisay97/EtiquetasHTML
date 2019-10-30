@@ -10,12 +10,26 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Etiquetas HTML</title>
     <!--base href="https://www.w3schools.com/" target="_blank"-->
-    <style type="text/css">
-        @media screen and (max-width:1034px){
-            #se {
-                width:100%; text-align: justify
+    <style type="text/css"> 
+        
+        @media (min-width: 1026px){
+            .se{
+                width:80%;
+                padding: 1em 3em;
+                margin: 1em 10%; 
+                
             }
-            
+        }
+        
+         
+        @media (max-width: 1024px){
+            .se{
+                width: 100%;
+                text-align: justify;
+                padding: 0px;
+                margin: 5px;
+            }
+
         }
     </style>
 </head>
@@ -28,7 +42,7 @@
             </div>
         </div>
     </section>
-    <section id="se" style="width:80%;padding: 1em 3em;margin: 1em 10%; text-align: justify;">
+    <section class="se">
         <!-- 1 a -->
         <section>
             <article>
@@ -2566,7 +2580,7 @@
             </div>
         </div>
     </section>
-    <section id="se" style="width:80%;padding: 1em 3em;margin: 1em 10%; text-align: justify;">
+    <section class="se">
 
         <!-- 1 article -->
         <section>
@@ -2601,23 +2615,25 @@
                     <div class="card">
                         <div class="card-body">
                             <h5>Ejemplo</h5>
-                            < article> <br>
-                                < h1>Google Chrome< /h1> <br>
-                                        < p>Google Chrome is a free, open-source web browser developed by Google,
-                                            released
-                                            in 2008.< /p> <br>
-                                                < /article> </div> </div> <div class="card">
-                                                    <div class="card-body">
-                                                        <h5>Resultado</h5>
-                                                        <article>
-                                                            <h1>Google Chrome< /h1> <p>Google Chrome is a free,
-                                                                    open-source
-                                                                    web browser developed by Google, released in 2008.
-                                                                    </p>
-                                                        </article>
-                                                    </div>
-                        </div>
-                    </div>
+                            <p>
+                                < article> <br>
+                                    < h1>Google Chrome< /h1> <br>
+                                            < p>Google Chrome is a free, open-source web browser developed by Google,
+                                                released
+                                                in 2008.< /p> <br>
+                                                    < /article> </p> </div> </div> <div class="card">
+                                                        <div class="card-body">
+                                                            <h5>Resultado</h5>
+                                                            <article>
+                                                                <h1>Google Chrome< /h1> <p>Google Chrome is a free,
+                                                                        open-source
+                                                                        web browser developed by Google, released in
+                                                                        2008.
+                            </p>
+            </article>
+            </div>
+            </div>
+            </div>
             </article>
         </section>
         <br>
@@ -2656,74 +2672,76 @@
                     <div class="card">
                         <div class="card-body">
                             <h5>Ejemplo</h5>
-                            < audio src="" autoplay="true" loop="true" controls="true">...< /audio> 
-                        </div> 
-                    </div> 
-                    <div class="card">
-                        <div class="card-body">
-                        <h5>Resultado</h5>
-                        <audio src="sonido/demusicaligera.mp3" autoplay="false" loop="true" controls="true">Cancion de musica ligera< /audio> 
-                        </div> 
-                    </div> 
-                </div>
-            </article> 
-        </section>
-        <br>
-        <!-- 3 bdi -->
-        <section>
-            <article>
-                <div class="card bg-light">
-                    <div class="card-header">
-                        <h4>3. Etiqueta < bdi></h4>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Descripcion</h5>
-                            <p>El elemento HTML < bdi> (o elemento de
-                                aislamiento
-                                Bi-Direccional) aisla un trozo
-                                de texto para que pueda ser formateado con
-                                una
-                                dirección diferente al texto que
-                                hay fuera de él. <br>
-                                Es útil al embeber o incrustart texto del
-                                que se
-                                desconoce la direccionalidad,
-                                por ejemplo proveniente de una base de
-                                datos, dentro
-                                de un texto con una
-                                direccionalidad fija.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <table>
-                                <tr>
-                                    <th><h5>Atributos</h5></th>
-                                </tr>
-                                <tr>
-                                    <td><p> No dispone de atributos propios. </p></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5>Ejemplo</h5>
-                            <p>Texto original en el codigo 5) nombre ) :Hola! Como estas?</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body">
-                            <h5>Resultado</h5>
-                            <p>Resultado en el navegador usando la etiqueta</p>
-                            <p dir="ltr"><bdi> נקניק (5): Hola! Cómo estás?</bdi> </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <br>
+                            < audio src="" autoplay="true" loop="true" controls="true">...< /audio> </div> </div> <div
+                                    class="card">
+                                    <div class="card-body">
+                                        <h5>Resultado</h5>
+                                        <audio src="sonido/demusicaligera.mp3" 
+                                            controls="true">Cancion de musica ligera</audio> </div> </div> </div>
+                                                </article> </section> <br>
+                                                <!-- 3 bdi -->
+                                                <section>
+                                                    <article>
+                                                        <div class="card bg-light">
+                                                            <div class="card-header">
+                                                                <h4>3. Etiqueta < bdi>
+                                                                </h4>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">Descripcion</h5>
+                                                                    <p>El elemento HTML < bdi> (o elemento de
+                                                                            aislamiento
+                                                                            Bi-Direccional) aisla un trozo
+                                                                            de texto para que pueda ser formateado con
+                                                                            una
+                                                                            dirección diferente al texto que
+                                                                            hay fuera de él. <br>
+                                                                            Es útil al embeber o incrustart texto del
+                                                                            que se
+                                                                            desconoce la direccionalidad,
+                                                                            por ejemplo proveniente de una base de
+                                                                            datos, dentro
+                                                                            de un texto con una
+                                                                            direccionalidad fija.</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <table>
+                                                                        <tr>
+                                                                            <th>
+                                                                                <h5>Atributos</h5>
+                                                                            </th>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <p> No dispone de atributos propios.
+                                                                                </p>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <h5>Ejemplo</h5>
+                                                                    <p>Texto original en el codigo 5) nombre ) :Hola!
+                                                                        Como estas?</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <h5>Resultado</h5>
+                                                                    <p>Resultado en el navegador usando la etiqueta</p>
+                                                                    <p dir="ltr"><bdi> נקניק (5): Hola! Cómo
+                                                                            estás?</bdi> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </section>
+                                                <br>
                                                 <!-- 4 canvas -->
                                                 <section>
                                                     <article>
@@ -2766,7 +2784,8 @@
                                                             <div class="card">
                                                                 <div class="card-body">
                                                                     <h5>Ejemplo</h5>
-                                                                    <p><pre>
+                                                                    <p>
+                                                                        <pre>
                                                                             < canvas id="myCanvas">< /canvas>
                                                                             
                                                                             Codigo java dentro de una etiqueta script 
@@ -2774,7 +2793,8 @@
                                                                             var ctx = canvas.getContext("2d");
                                                                             ctx.fillStyle = "#FF0000";
                                                                             ctx.fillRect(0, 0, 80, 80);
-                                                                    </pre></p>
+                                                                    </pre>
+                                                                    </p>
 
                                                                 </div>
                                                             </div>
@@ -2834,16 +2854,18 @@
                                                             <div class="card">
                                                                 <div class="card-body">
                                                                     <h5>Ejemplo</h5>
-                                                                    <p>< dialog open> Esto es una ventana de dialogo
-                                                                        < /dialog></p> </div> </div> <div class="card">
-                                                                            <div class="card-body">
-                                                                                <h5>Resultado</h5>
-                                                                                <dialog open> Esto es una ventana de
-                                                                                    dialogo
-                                                                                </dialog>
-                                                                                <br><br>
-                                                                                <p></p>
-                                                                            </div>
+                                                                    <p>
+                                                                        < dialog open> Esto es una ventana de dialogo
+                                                                            < /dialog> </p> </div> </div> <div
+                                                                                class="card">
+                                                                                <div class="card-body">
+                                                                                    <h5>Resultado</h5>
+                                                                                    <dialog open> Esto es una ventana de
+                                                                                        dialogo
+                                                                                    </dialog>
+                                                                                    <br><br>
+                                                                                    <p></p>
+                                                                                </div>
                                                                 </div>
                                                             </div>
                                                     </article>
@@ -3628,7 +3650,7 @@
                                                             <div class="card">
                                                                 <div class="card-body">
                                                                     <h5>Resultado</h5>
-                                                                    <audio controls>
+                                                                    <audio controls="true">
                                                                         <source src="sonido/demusicaligera.ogg"
                                                                             type="audio/ogg">
                                                                         <source src="sonido/demusicaligera.mp3"
